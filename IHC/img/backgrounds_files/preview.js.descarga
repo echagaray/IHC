@@ -1,0 +1,30 @@
+function centerPreview(){
+  var previewFrame = {
+    doc:document
+  };
+  
+  var $prev_doc = previewFrame.doc.body;
+  var element = $prev_doc.getElementsByClassName('element')[0];
+  var button = element.childNodes[1];
+  var wrapper = previewFrame.doc.createElement('div');
+  wrapper.appendChild(button);
+  element.appendChild(wrapper);
+  wrapper.style.position = 'absolute';
+  
+  var container_center = {
+    top: element.offsetHeight/2,
+    left: element.offsetWidth/2
+  };
+  var rect = button.getBoundingClientRect();
+  var button_center = {
+    top: rect.top + rect.height/2,
+    left: rect.left + rect.width/2
+  };
+  var center_offset = {
+    top: container_center.top - button_center.top, 
+    left: container_center.left - button_center.left 
+  };
+//  button.addClass(disable_transition_class)
+  wrapper.style.top = center_offset.top + 'px';
+  wrapper.style.left = center_offset.left + 'px';
+}

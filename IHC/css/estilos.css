@@ -1,0 +1,152 @@
+body
+{
+	background-color: #f5D348;
+	
+	border-radius: 5px;
+	margin: 0 auto;
+	max-width: 1024px;
+}
+#bien
+{
+
+	width: 30%;
+	margin-top: 10px;
+	margin-left:350px;
+}
+#feria
+{
+	
+	margin-top: 10px;
+	width: 400px;
+	margin-left: 30%;
+}
+#sin
+{
+	width: 110px;
+	margin-left: 150px;
+	position: absolute;
+}
+
+#article{
+	font-size: 3em;
+	color: #0dff9f;
+}
+.artistas{
+	font-size: 3em;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+/*#fondo{
+background-repeat: repeat;
+	background-attachment: fixed;
+	background-image:url("img/hacienda.jpg");
+background-attachment: fixed;
+width: 100%;
+padding: 0 auto;
+margin: 0 auto;
+}*/
+header nav ul button
+{
+
+	font-size: 2em;
+	color: #F029C5;
+	background: transparent;
+    border: none !important;
+	display: inline-block;
+	margin-right: 10px;
+	text-align: center;
+    outline:none;
+    cursor:pointer;
+
+     -webkit-background-size: 50% 100%;
+   -moz-background-size: 50% 100%;
+   -o-background-size: 50% 100%;
+}
+
+header nav ul button:hover
+{
+	
+	font-size: 2em;
+	color:  #f5D348;
+	background: #F029C5;
+    border: none !important;
+	display: inline-block;
+	margin-right: 10px;
+	text-align: center;
+    outline:none;
+    cursor:pointer;
+}
+
+
+  
+ 
+
+header nav
+{
+
+	padding: 6px;
+	background:transparent;
+}
+
+
+/*CARRUSEL CSS*/
+
+.slider
+{
+width: 95%;
+margin:  auto;
+overflow: hidden;
+}
+
+
+.slider ul
+{
+padding: 0;
+display:flex;
+width: 400%;
+animation: carrusel 20s infinite alternate;
+
+}
+
+.slider  li 
+{
+list-style: none;
+width: 100%;
+}
+
+.slider img
+{
+	width: 30%;
+}
+
+@keyframes carrusel
+{
+0% {margin-left:0;} 
+20% {margin-left:0;} 
+
+25% {margin-left:-100;} 
+40% {margin-left:-100;} 
+
+
+50% {margin-left:-200;} 
+70% {margin-left:-200;} 
+
+
+75% {margin-left:-300;} 
+100% {margin-left:-300;} 
+}
+
+/* AQUI SE ACABA EL CARRUSEL*/
+
+footer img{
+font-size: 20px;
+color:red;
+padding-left: 10px;
+float: right;
+display: inline-block;
+width: 4%;
+
+
+}
+
